@@ -39,7 +39,7 @@ def Login(username, password, openkey, unionId):
     headers['MiniToken'] = j['message']
     postData = {
         'number': username,
-        'location': '在学校',
+        'location': '外地但在境内-黑龙江省/哈尔滨市/道里区',
         'health': '健康，未超过37.3',
         'recordTime': int(round(time.time() * 1000)),
         'token': get_token(portname, username)
