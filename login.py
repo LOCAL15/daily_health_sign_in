@@ -40,7 +40,7 @@ def Login(username, password, openkey, unionId):
     postData = {
         'number': username,
         'health': '健康，未超过37.3'
-        "location":"在外地但在境内-黑龙江省/哈尔滨市/道里区",
+        'location':'在外地但在境内-黑龙江省/哈尔滨市/道里区',
         'recordTime': int(round(time.time() * 1000)),
         'token': get_token(portname, username)
     }
